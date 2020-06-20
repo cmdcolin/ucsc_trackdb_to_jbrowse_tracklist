@@ -1,0 +1,925 @@
+track aorta
+superTrack on show
+shortLabel aorta
+longLabel aorta ChIP-seq samples
+
+
+track aorta_Input
+superTrack on show
+shortLabel aorta_Input
+longLabel aorta_Input ChIP-seq samples
+
+
+track colon
+superTrack on show
+shortLabel colon
+longLabel colon ChIP-seq samples
+
+
+track colon_Input
+superTrack on show
+shortLabel colon_Input
+longLabel colon_Input ChIP-seq samples
+
+
+track skeletalMuscle
+superTrack on show
+shortLabel skeletalMuscle
+longLabel skeletalMuscle ChIP-seq samples
+
+
+track skeletalMuscle_Input
+superTrack on show
+shortLabel skeletalMuscle_Input
+longLabel skeletalMuscle_Input ChIP-seq samples
+
+
+track thyroid
+superTrack on show
+shortLabel thyroid
+longLabel thyroid ChIP-seq samples
+
+
+track thyroid_Input
+superTrack on show
+shortLabel thyroid_Input
+longLabel thyroid_Input ChIP-seq samples
+
+
+
+track all_labels
+type bigBed 9
+shortLabel _model_all_labels
+longLabel Manually labeled regions with and without peaks
+visibility pack
+itemRgb on
+spectrum off
+bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/all_labels.bigBed
+
+track problems
+type bigBed 3
+shortLabel _model_problems
+longLabel Separate problems (PeakSegFPOP looks for multiple peaks in each region, independently for each sample)
+visibility pack
+itemRgb off
+spectrum off
+bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/problems.bigBed
+
+track jointProblems
+type bigBed 3
+shortLabel _model_jointProblems
+longLabel Joint problems (PeakSegJoint looks for one common peak in each region, across all samples)
+visibility pack
+itemRgb off
+spectrum off
+bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/jointProblems.bigBed
+
+track peaks_summary
+type bigBed 5
+shortLabel _model_peaks_summary
+longLabel Regions with a peak in at least one sample
+visibility pack
+itemRgb off
+spectrum on
+bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/peaks_summary.bigBed
+
+
+ track aorta_ENCFF115HTK
+ parent aorta
+ container multiWig
+ type bigWig
+ shortLabel aorta_ENCFF115HTK
+ longLabel aorta | ENCFF115HTK
+ graphType points
+ aggregate transparentOverlay
+ showSubtrackColorOnUi on
+ maxHeightPixels 25:12:8
+ visibility full
+ autoScale on
+
+  track aorta_ENCFF115HTKCoverage
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/aorta/ENCFF115HTK/coverage.bigWig
+  shortLabel aorta_ENCFF115HTKCoverage
+  longLabel aorta | ENCFF115HTK | Coverage
+  parent aorta_ENCFF115HTK
+  type bigWig
+  color 141,211,199
+
+  track aorta_ENCFF115HTKPeaks
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/aorta/ENCFF115HTK/joint_peaks.bigWig
+  shortLabel aorta_ENCFF115HTKPeaks
+  longLabel aorta | ENCFF115HTK | Peaks
+  parent aorta_ENCFF115HTK
+  type bigWig
+  color 0,0,0
+
+
+ track aorta_ENCFF502AXL
+ parent aorta
+ container multiWig
+ type bigWig
+ shortLabel aorta_ENCFF502AXL
+ longLabel aorta | ENCFF502AXL
+ graphType points
+ aggregate transparentOverlay
+ showSubtrackColorOnUi on
+ maxHeightPixels 25:12:8
+ visibility full
+ autoScale on
+
+  track aorta_ENCFF502AXLCoverage
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/aorta/ENCFF502AXL/coverage.bigWig
+  shortLabel aorta_ENCFF502AXLCoverage
+  longLabel aorta | ENCFF502AXL | Coverage
+  parent aorta_ENCFF502AXL
+  type bigWig
+  color 141,211,199
+
+  track aorta_ENCFF502AXLPeaks
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/aorta/ENCFF502AXL/joint_peaks.bigWig
+  shortLabel aorta_ENCFF502AXLPeaks
+  longLabel aorta | ENCFF502AXL | Peaks
+  parent aorta_ENCFF502AXL
+  type bigWig
+  color 0,0,0
+
+
+ track aorta_ENCFF974KVN
+ parent aorta
+ container multiWig
+ type bigWig
+ shortLabel aorta_ENCFF974KVN
+ longLabel aorta | ENCFF974KVN
+ graphType points
+ aggregate transparentOverlay
+ showSubtrackColorOnUi on
+ maxHeightPixels 25:12:8
+ visibility full
+ autoScale on
+
+  track aorta_ENCFF974KVNCoverage
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/aorta/ENCFF974KVN/coverage.bigWig
+  shortLabel aorta_ENCFF974KVNCoverage
+  longLabel aorta | ENCFF974KVN | Coverage
+  parent aorta_ENCFF974KVN
+  type bigWig
+  color 141,211,199
+
+  track aorta_ENCFF974KVNPeaks
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/aorta/ENCFF974KVN/joint_peaks.bigWig
+  shortLabel aorta_ENCFF974KVNPeaks
+  longLabel aorta | ENCFF974KVN | Peaks
+  parent aorta_ENCFF974KVN
+  type bigWig
+  color 0,0,0
+
+
+ track aorta_Input_ENCFF209QWM
+ parent aorta_Input
+ container multiWig
+ type bigWig
+ shortLabel aorta_Input_ENCFF209QWM
+ longLabel aorta_Input | ENCFF209QWM
+ graphType points
+ aggregate transparentOverlay
+ showSubtrackColorOnUi on
+ maxHeightPixels 25:12:8
+ visibility full
+ autoScale on
+
+  track aorta_Input_ENCFF209QWMCoverage
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/aorta_Input/ENCFF209QWM/coverage.bigWig
+  shortLabel aorta_Input_ENCFF209QWMCoverage
+  longLabel aorta_Input | ENCFF209QWM | Coverage
+  parent aorta_Input_ENCFF209QWM
+  type bigWig
+  color 190,186,218
+
+  track aorta_Input_ENCFF209QWMPeaks
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/aorta_Input/ENCFF209QWM/joint_peaks.bigWig
+  shortLabel aorta_Input_ENCFF209QWMPeaks
+  longLabel aorta_Input | ENCFF209QWM | Peaks
+  parent aorta_Input_ENCFF209QWM
+  type bigWig
+  color 0,0,0
+
+
+ track aorta_Input_ENCFF264DFJ
+ parent aorta_Input
+ container multiWig
+ type bigWig
+ shortLabel aorta_Input_ENCFF264DFJ
+ longLabel aorta_Input | ENCFF264DFJ
+ graphType points
+ aggregate transparentOverlay
+ showSubtrackColorOnUi on
+ maxHeightPixels 25:12:8
+ visibility full
+ autoScale on
+
+  track aorta_Input_ENCFF264DFJCoverage
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/aorta_Input/ENCFF264DFJ/coverage.bigWig
+  shortLabel aorta_Input_ENCFF264DFJCoverage
+  longLabel aorta_Input | ENCFF264DFJ | Coverage
+  parent aorta_Input_ENCFF264DFJ
+  type bigWig
+  color 190,186,218
+
+  track aorta_Input_ENCFF264DFJPeaks
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/aorta_Input/ENCFF264DFJ/joint_peaks.bigWig
+  shortLabel aorta_Input_ENCFF264DFJPeaks
+  longLabel aorta_Input | ENCFF264DFJ | Peaks
+  parent aorta_Input_ENCFF264DFJ
+  type bigWig
+  color 0,0,0
+
+
+ track aorta_Input_ENCFF626FKO
+ parent aorta_Input
+ container multiWig
+ type bigWig
+ shortLabel aorta_Input_ENCFF626FKO
+ longLabel aorta_Input | ENCFF626FKO
+ graphType points
+ aggregate transparentOverlay
+ showSubtrackColorOnUi on
+ maxHeightPixels 25:12:8
+ visibility full
+ autoScale on
+
+  track aorta_Input_ENCFF626FKOCoverage
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/aorta_Input/ENCFF626FKO/coverage.bigWig
+  shortLabel aorta_Input_ENCFF626FKOCoverage
+  longLabel aorta_Input | ENCFF626FKO | Coverage
+  parent aorta_Input_ENCFF626FKO
+  type bigWig
+  color 190,186,218
+
+  track aorta_Input_ENCFF626FKOPeaks
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/aorta_Input/ENCFF626FKO/joint_peaks.bigWig
+  shortLabel aorta_Input_ENCFF626FKOPeaks
+  longLabel aorta_Input | ENCFF626FKO | Peaks
+  parent aorta_Input_ENCFF626FKO
+  type bigWig
+  color 0,0,0
+
+
+ track colon_ENCFF332UYK
+ parent colon
+ container multiWig
+ type bigWig
+ shortLabel colon_ENCFF332UYK
+ longLabel colon | ENCFF332UYK
+ graphType points
+ aggregate transparentOverlay
+ showSubtrackColorOnUi on
+ maxHeightPixels 25:12:8
+ visibility full
+ autoScale on
+
+  track colon_ENCFF332UYKCoverage
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/colon/ENCFF332UYK/coverage.bigWig
+  shortLabel colon_ENCFF332UYKCoverage
+  longLabel colon | ENCFF332UYK | Coverage
+  parent colon_ENCFF332UYK
+  type bigWig
+  color 251,128,114
+
+  track colon_ENCFF332UYKPeaks
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/colon/ENCFF332UYK/joint_peaks.bigWig
+  shortLabel colon_ENCFF332UYKPeaks
+  longLabel colon | ENCFF332UYK | Peaks
+  parent colon_ENCFF332UYK
+  type bigWig
+  color 0,0,0
+
+
+ track colon_ENCFF873WWR
+ parent colon
+ container multiWig
+ type bigWig
+ shortLabel colon_ENCFF873WWR
+ longLabel colon | ENCFF873WWR
+ graphType points
+ aggregate transparentOverlay
+ showSubtrackColorOnUi on
+ maxHeightPixels 25:12:8
+ visibility full
+ autoScale on
+
+  track colon_ENCFF873WWRCoverage
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/colon/ENCFF873WWR/coverage.bigWig
+  shortLabel colon_ENCFF873WWRCoverage
+  longLabel colon | ENCFF873WWR | Coverage
+  parent colon_ENCFF873WWR
+  type bigWig
+  color 251,128,114
+
+  track colon_ENCFF873WWRPeaks
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/colon/ENCFF873WWR/joint_peaks.bigWig
+  shortLabel colon_ENCFF873WWRPeaks
+  longLabel colon | ENCFF873WWR | Peaks
+  parent colon_ENCFF873WWR
+  type bigWig
+  color 0,0,0
+
+
+ track colon_Input_ENCFF788LJE
+ parent colon_Input
+ container multiWig
+ type bigWig
+ shortLabel colon_Input_ENCFF788LJE
+ longLabel colon_Input | ENCFF788LJE
+ graphType points
+ aggregate transparentOverlay
+ showSubtrackColorOnUi on
+ maxHeightPixels 25:12:8
+ visibility full
+ autoScale on
+
+  track colon_Input_ENCFF788LJECoverage
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/colon_Input/ENCFF788LJE/coverage.bigWig
+  shortLabel colon_Input_ENCFF788LJECoverage
+  longLabel colon_Input | ENCFF788LJE | Coverage
+  parent colon_Input_ENCFF788LJE
+  type bigWig
+  color 128,177,211
+
+  track colon_Input_ENCFF788LJEPeaks
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/colon_Input/ENCFF788LJE/joint_peaks.bigWig
+  shortLabel colon_Input_ENCFF788LJEPeaks
+  longLabel colon_Input | ENCFF788LJE | Peaks
+  parent colon_Input_ENCFF788LJE
+  type bigWig
+  color 0,0,0
+
+
+ track colon_Input_ENCFF937EBV
+ parent colon_Input
+ container multiWig
+ type bigWig
+ shortLabel colon_Input_ENCFF937EBV
+ longLabel colon_Input | ENCFF937EBV
+ graphType points
+ aggregate transparentOverlay
+ showSubtrackColorOnUi on
+ maxHeightPixels 25:12:8
+ visibility full
+ autoScale on
+
+  track colon_Input_ENCFF937EBVCoverage
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/colon_Input/ENCFF937EBV/coverage.bigWig
+  shortLabel colon_Input_ENCFF937EBVCoverage
+  longLabel colon_Input | ENCFF937EBV | Coverage
+  parent colon_Input_ENCFF937EBV
+  type bigWig
+  color 128,177,211
+
+  track colon_Input_ENCFF937EBVPeaks
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/colon_Input/ENCFF937EBV/joint_peaks.bigWig
+  shortLabel colon_Input_ENCFF937EBVPeaks
+  longLabel colon_Input | ENCFF937EBV | Peaks
+  parent colon_Input_ENCFF937EBV
+  type bigWig
+  color 0,0,0
+
+
+ track skeletalMuscle_ENCFF000BMB
+ parent skeletalMuscle
+ container multiWig
+ type bigWig
+ shortLabel skeletalMuscle_ENCFF000BMB
+ longLabel skeletalMuscle | ENCFF000BMB
+ graphType points
+ aggregate transparentOverlay
+ showSubtrackColorOnUi on
+ maxHeightPixels 25:12:8
+ visibility full
+ autoScale on
+
+  track skeletalMuscle_ENCFF000BMBCoverage
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle/ENCFF000BMB/coverage.bigWig
+  shortLabel skeletalMuscle_ENCFF000BMBCoverage
+  longLabel skeletalMuscle | ENCFF000BMB | Coverage
+  parent skeletalMuscle_ENCFF000BMB
+  type bigWig
+  color 253,180,98
+
+  track skeletalMuscle_ENCFF000BMBPeaks
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle/ENCFF000BMB/joint_peaks.bigWig
+  shortLabel skeletalMuscle_ENCFF000BMBPeaks
+  longLabel skeletalMuscle | ENCFF000BMB | Peaks
+  parent skeletalMuscle_ENCFF000BMB
+  type bigWig
+  color 0,0,0
+
+
+ track skeletalMuscle_ENCFF000BMD
+ parent skeletalMuscle
+ container multiWig
+ type bigWig
+ shortLabel skeletalMuscle_ENCFF000BMD
+ longLabel skeletalMuscle | ENCFF000BMD
+ graphType points
+ aggregate transparentOverlay
+ showSubtrackColorOnUi on
+ maxHeightPixels 25:12:8
+ visibility full
+ autoScale on
+
+  track skeletalMuscle_ENCFF000BMDCoverage
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle/ENCFF000BMD/coverage.bigWig
+  shortLabel skeletalMuscle_ENCFF000BMDCoverage
+  longLabel skeletalMuscle | ENCFF000BMD | Coverage
+  parent skeletalMuscle_ENCFF000BMD
+  type bigWig
+  color 253,180,98
+
+  track skeletalMuscle_ENCFF000BMDPeaks
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle/ENCFF000BMD/joint_peaks.bigWig
+  shortLabel skeletalMuscle_ENCFF000BMDPeaks
+  longLabel skeletalMuscle | ENCFF000BMD | Peaks
+  parent skeletalMuscle_ENCFF000BMD
+  type bigWig
+  color 0,0,0
+
+
+ track skeletalMuscle_ENCFF063EVY
+ parent skeletalMuscle
+ container multiWig
+ type bigWig
+ shortLabel skeletalMuscle_ENCFF063EVY
+ longLabel skeletalMuscle | ENCFF063EVY
+ graphType points
+ aggregate transparentOverlay
+ showSubtrackColorOnUi on
+ maxHeightPixels 25:12:8
+ visibility full
+ autoScale on
+
+  track skeletalMuscle_ENCFF063EVYCoverage
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle/ENCFF063EVY/coverage.bigWig
+  shortLabel skeletalMuscle_ENCFF063EVYCoverage
+  longLabel skeletalMuscle | ENCFF063EVY | Coverage
+  parent skeletalMuscle_ENCFF063EVY
+  type bigWig
+  color 253,180,98
+
+  track skeletalMuscle_ENCFF063EVYPeaks
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle/ENCFF063EVY/joint_peaks.bigWig
+  shortLabel skeletalMuscle_ENCFF063EVYPeaks
+  longLabel skeletalMuscle | ENCFF063EVY | Peaks
+  parent skeletalMuscle_ENCFF063EVY
+  type bigWig
+  color 0,0,0
+
+
+ track skeletalMuscle_ENCFF280HQO
+ parent skeletalMuscle
+ container multiWig
+ type bigWig
+ shortLabel skeletalMuscle_ENCFF280HQO
+ longLabel skeletalMuscle | ENCFF280HQO
+ graphType points
+ aggregate transparentOverlay
+ showSubtrackColorOnUi on
+ maxHeightPixels 25:12:8
+ visibility full
+ autoScale on
+
+  track skeletalMuscle_ENCFF280HQOCoverage
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle/ENCFF280HQO/coverage.bigWig
+  shortLabel skeletalMuscle_ENCFF280HQOCoverage
+  longLabel skeletalMuscle | ENCFF280HQO | Coverage
+  parent skeletalMuscle_ENCFF280HQO
+  type bigWig
+  color 253,180,98
+
+  track skeletalMuscle_ENCFF280HQOPeaks
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle/ENCFF280HQO/joint_peaks.bigWig
+  shortLabel skeletalMuscle_ENCFF280HQOPeaks
+  longLabel skeletalMuscle | ENCFF280HQO | Peaks
+  parent skeletalMuscle_ENCFF280HQO
+  type bigWig
+  color 0,0,0
+
+
+ track skeletalMuscle_ENCFF290WZR
+ parent skeletalMuscle
+ container multiWig
+ type bigWig
+ shortLabel skeletalMuscle_ENCFF290WZR
+ longLabel skeletalMuscle | ENCFF290WZR
+ graphType points
+ aggregate transparentOverlay
+ showSubtrackColorOnUi on
+ maxHeightPixels 25:12:8
+ visibility full
+ autoScale on
+
+  track skeletalMuscle_ENCFF290WZRCoverage
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle/ENCFF290WZR/coverage.bigWig
+  shortLabel skeletalMuscle_ENCFF290WZRCoverage
+  longLabel skeletalMuscle | ENCFF290WZR | Coverage
+  parent skeletalMuscle_ENCFF290WZR
+  type bigWig
+  color 253,180,98
+
+  track skeletalMuscle_ENCFF290WZRPeaks
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle/ENCFF290WZR/joint_peaks.bigWig
+  shortLabel skeletalMuscle_ENCFF290WZRPeaks
+  longLabel skeletalMuscle | ENCFF290WZR | Peaks
+  parent skeletalMuscle_ENCFF290WZR
+  type bigWig
+  color 0,0,0
+
+
+ track skeletalMuscle_ENCFF743PUV
+ parent skeletalMuscle
+ container multiWig
+ type bigWig
+ shortLabel skeletalMuscle_ENCFF743PUV
+ longLabel skeletalMuscle | ENCFF743PUV
+ graphType points
+ aggregate transparentOverlay
+ showSubtrackColorOnUi on
+ maxHeightPixels 25:12:8
+ visibility full
+ autoScale on
+
+  track skeletalMuscle_ENCFF743PUVCoverage
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle/ENCFF743PUV/coverage.bigWig
+  shortLabel skeletalMuscle_ENCFF743PUVCoverage
+  longLabel skeletalMuscle | ENCFF743PUV | Coverage
+  parent skeletalMuscle_ENCFF743PUV
+  type bigWig
+  color 253,180,98
+
+  track skeletalMuscle_ENCFF743PUVPeaks
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle/ENCFF743PUV/joint_peaks.bigWig
+  shortLabel skeletalMuscle_ENCFF743PUVPeaks
+  longLabel skeletalMuscle | ENCFF743PUV | Peaks
+  parent skeletalMuscle_ENCFF743PUV
+  type bigWig
+  color 0,0,0
+
+
+ track skeletalMuscle_Input_ENCFF000BJZ
+ parent skeletalMuscle_Input
+ container multiWig
+ type bigWig
+ shortLabel skeletalMuscle_Input_ENCFF000BJZ
+ longLabel skeletalMuscle_Input | ENCFF000BJZ
+ graphType points
+ aggregate transparentOverlay
+ showSubtrackColorOnUi on
+ maxHeightPixels 25:12:8
+ visibility full
+ autoScale on
+
+  track skeletalMuscle_Input_ENCFF000BJZCoverage
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle_Input/ENCFF000BJZ/coverage.bigWig
+  shortLabel skeletalMuscle_Input_ENCFF000BJZCoverage
+  longLabel skeletalMuscle_Input | ENCFF000BJZ | Coverage
+  parent skeletalMuscle_Input_ENCFF000BJZ
+  type bigWig
+  color 179,222,105
+
+  track skeletalMuscle_Input_ENCFF000BJZPeaks
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle_Input/ENCFF000BJZ/joint_peaks.bigWig
+  shortLabel skeletalMuscle_Input_ENCFF000BJZPeaks
+  longLabel skeletalMuscle_Input | ENCFF000BJZ | Peaks
+  parent skeletalMuscle_Input_ENCFF000BJZ
+  type bigWig
+  color 0,0,0
+
+
+ track skeletalMuscle_Input_ENCFF000BKA
+ parent skeletalMuscle_Input
+ container multiWig
+ type bigWig
+ shortLabel skeletalMuscle_Input_ENCFF000BKA
+ longLabel skeletalMuscle_Input | ENCFF000BKA
+ graphType points
+ aggregate transparentOverlay
+ showSubtrackColorOnUi on
+ maxHeightPixels 25:12:8
+ visibility full
+ autoScale on
+
+  track skeletalMuscle_Input_ENCFF000BKACoverage
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle_Input/ENCFF000BKA/coverage.bigWig
+  shortLabel skeletalMuscle_Input_ENCFF000BKACoverage
+  longLabel skeletalMuscle_Input | ENCFF000BKA | Coverage
+  parent skeletalMuscle_Input_ENCFF000BKA
+  type bigWig
+  color 179,222,105
+
+  track skeletalMuscle_Input_ENCFF000BKAPeaks
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle_Input/ENCFF000BKA/joint_peaks.bigWig
+  shortLabel skeletalMuscle_Input_ENCFF000BKAPeaks
+  longLabel skeletalMuscle_Input | ENCFF000BKA | Peaks
+  parent skeletalMuscle_Input_ENCFF000BKA
+  type bigWig
+  color 0,0,0
+
+
+ track skeletalMuscle_Input_ENCFF003XTF
+ parent skeletalMuscle_Input
+ container multiWig
+ type bigWig
+ shortLabel skeletalMuscle_Input_ENCFF003XTF
+ longLabel skeletalMuscle_Input | ENCFF003XTF
+ graphType points
+ aggregate transparentOverlay
+ showSubtrackColorOnUi on
+ maxHeightPixels 25:12:8
+ visibility full
+ autoScale on
+
+  track skeletalMuscle_Input_ENCFF003XTFCoverage
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle_Input/ENCFF003XTF/coverage.bigWig
+  shortLabel skeletalMuscle_Input_ENCFF003XTFCoverage
+  longLabel skeletalMuscle_Input | ENCFF003XTF | Coverage
+  parent skeletalMuscle_Input_ENCFF003XTF
+  type bigWig
+  color 179,222,105
+
+  track skeletalMuscle_Input_ENCFF003XTFPeaks
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle_Input/ENCFF003XTF/joint_peaks.bigWig
+  shortLabel skeletalMuscle_Input_ENCFF003XTFPeaks
+  longLabel skeletalMuscle_Input | ENCFF003XTF | Peaks
+  parent skeletalMuscle_Input_ENCFF003XTF
+  type bigWig
+  color 0,0,0
+
+
+ track skeletalMuscle_Input_ENCFF208RCO
+ parent skeletalMuscle_Input
+ container multiWig
+ type bigWig
+ shortLabel skeletalMuscle_Input_ENCFF208RCO
+ longLabel skeletalMuscle_Input | ENCFF208RCO
+ graphType points
+ aggregate transparentOverlay
+ showSubtrackColorOnUi on
+ maxHeightPixels 25:12:8
+ visibility full
+ autoScale on
+
+  track skeletalMuscle_Input_ENCFF208RCOCoverage
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle_Input/ENCFF208RCO/coverage.bigWig
+  shortLabel skeletalMuscle_Input_ENCFF208RCOCoverage
+  longLabel skeletalMuscle_Input | ENCFF208RCO | Coverage
+  parent skeletalMuscle_Input_ENCFF208RCO
+  type bigWig
+  color 179,222,105
+
+  track skeletalMuscle_Input_ENCFF208RCOPeaks
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle_Input/ENCFF208RCO/joint_peaks.bigWig
+  shortLabel skeletalMuscle_Input_ENCFF208RCOPeaks
+  longLabel skeletalMuscle_Input | ENCFF208RCO | Peaks
+  parent skeletalMuscle_Input_ENCFF208RCO
+  type bigWig
+  color 0,0,0
+
+
+ track thyroid_ENCFF014AIG
+ parent thyroid
+ container multiWig
+ type bigWig
+ shortLabel thyroid_ENCFF014AIG
+ longLabel thyroid | ENCFF014AIG
+ graphType points
+ aggregate transparentOverlay
+ showSubtrackColorOnUi on
+ maxHeightPixels 25:12:8
+ visibility full
+ autoScale on
+
+  track thyroid_ENCFF014AIGCoverage
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid/ENCFF014AIG/coverage.bigWig
+  shortLabel thyroid_ENCFF014AIGCoverage
+  longLabel thyroid | ENCFF014AIG | Coverage
+  parent thyroid_ENCFF014AIG
+  type bigWig
+  color 252,205,229
+
+  track thyroid_ENCFF014AIGPeaks
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid/ENCFF014AIG/joint_peaks.bigWig
+  shortLabel thyroid_ENCFF014AIGPeaks
+  longLabel thyroid | ENCFF014AIG | Peaks
+  parent thyroid_ENCFF014AIG
+  type bigWig
+  color 0,0,0
+
+
+ track thyroid_ENCFF020VFT
+ parent thyroid
+ container multiWig
+ type bigWig
+ shortLabel thyroid_ENCFF020VFT
+ longLabel thyroid | ENCFF020VFT
+ graphType points
+ aggregate transparentOverlay
+ showSubtrackColorOnUi on
+ maxHeightPixels 25:12:8
+ visibility full
+ autoScale on
+
+  track thyroid_ENCFF020VFTCoverage
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid/ENCFF020VFT/coverage.bigWig
+  shortLabel thyroid_ENCFF020VFTCoverage
+  longLabel thyroid | ENCFF020VFT | Coverage
+  parent thyroid_ENCFF020VFT
+  type bigWig
+  color 252,205,229
+
+  track thyroid_ENCFF020VFTPeaks
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid/ENCFF020VFT/joint_peaks.bigWig
+  shortLabel thyroid_ENCFF020VFTPeaks
+  longLabel thyroid | ENCFF020VFT | Peaks
+  parent thyroid_ENCFF020VFT
+  type bigWig
+  color 0,0,0
+
+
+ track thyroid_ENCFF482XRP
+ parent thyroid
+ container multiWig
+ type bigWig
+ shortLabel thyroid_ENCFF482XRP
+ longLabel thyroid | ENCFF482XRP
+ graphType points
+ aggregate transparentOverlay
+ showSubtrackColorOnUi on
+ maxHeightPixels 25:12:8
+ visibility full
+ autoScale on
+
+  track thyroid_ENCFF482XRPCoverage
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid/ENCFF482XRP/coverage.bigWig
+  shortLabel thyroid_ENCFF482XRPCoverage
+  longLabel thyroid | ENCFF482XRP | Coverage
+  parent thyroid_ENCFF482XRP
+  type bigWig
+  color 252,205,229
+
+  track thyroid_ENCFF482XRPPeaks
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid/ENCFF482XRP/joint_peaks.bigWig
+  shortLabel thyroid_ENCFF482XRPPeaks
+  longLabel thyroid | ENCFF482XRP | Peaks
+  parent thyroid_ENCFF482XRP
+  type bigWig
+  color 0,0,0
+
+
+ track thyroid_ENCFF606GLK
+ parent thyroid
+ container multiWig
+ type bigWig
+ shortLabel thyroid_ENCFF606GLK
+ longLabel thyroid | ENCFF606GLK
+ graphType points
+ aggregate transparentOverlay
+ showSubtrackColorOnUi on
+ maxHeightPixels 25:12:8
+ visibility full
+ autoScale on
+
+  track thyroid_ENCFF606GLKCoverage
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid/ENCFF606GLK/coverage.bigWig
+  shortLabel thyroid_ENCFF606GLKCoverage
+  longLabel thyroid | ENCFF606GLK | Coverage
+  parent thyroid_ENCFF606GLK
+  type bigWig
+  color 252,205,229
+
+  track thyroid_ENCFF606GLKPeaks
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid/ENCFF606GLK/joint_peaks.bigWig
+  shortLabel thyroid_ENCFF606GLKPeaks
+  longLabel thyroid | ENCFF606GLK | Peaks
+  parent thyroid_ENCFF606GLK
+  type bigWig
+  color 0,0,0
+
+
+ track thyroid_Input_ENCFF054RMF
+ parent thyroid_Input
+ container multiWig
+ type bigWig
+ shortLabel thyroid_Input_ENCFF054RMF
+ longLabel thyroid_Input | ENCFF054RMF
+ graphType points
+ aggregate transparentOverlay
+ showSubtrackColorOnUi on
+ maxHeightPixels 25:12:8
+ visibility full
+ autoScale on
+
+  track thyroid_Input_ENCFF054RMFCoverage
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid_Input/ENCFF054RMF/coverage.bigWig
+  shortLabel thyroid_Input_ENCFF054RMFCoverage
+  longLabel thyroid_Input | ENCFF054RMF | Coverage
+  parent thyroid_Input_ENCFF054RMF
+  type bigWig
+  color 217,217,217
+
+  track thyroid_Input_ENCFF054RMFPeaks
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid_Input/ENCFF054RMF/joint_peaks.bigWig
+  shortLabel thyroid_Input_ENCFF054RMFPeaks
+  longLabel thyroid_Input | ENCFF054RMF | Peaks
+  parent thyroid_Input_ENCFF054RMF
+  type bigWig
+  color 0,0,0
+
+
+ track thyroid_Input_ENCFF108SOQ
+ parent thyroid_Input
+ container multiWig
+ type bigWig
+ shortLabel thyroid_Input_ENCFF108SOQ
+ longLabel thyroid_Input | ENCFF108SOQ
+ graphType points
+ aggregate transparentOverlay
+ showSubtrackColorOnUi on
+ maxHeightPixels 25:12:8
+ visibility full
+ autoScale on
+
+  track thyroid_Input_ENCFF108SOQCoverage
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid_Input/ENCFF108SOQ/coverage.bigWig
+  shortLabel thyroid_Input_ENCFF108SOQCoverage
+  longLabel thyroid_Input | ENCFF108SOQ | Coverage
+  parent thyroid_Input_ENCFF108SOQ
+  type bigWig
+  color 217,217,217
+
+  track thyroid_Input_ENCFF108SOQPeaks
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid_Input/ENCFF108SOQ/joint_peaks.bigWig
+  shortLabel thyroid_Input_ENCFF108SOQPeaks
+  longLabel thyroid_Input | ENCFF108SOQ | Peaks
+  parent thyroid_Input_ENCFF108SOQ
+  type bigWig
+  color 0,0,0
+
+
+ track thyroid_Input_ENCFF442YKA
+ parent thyroid_Input
+ container multiWig
+ type bigWig
+ shortLabel thyroid_Input_ENCFF442YKA
+ longLabel thyroid_Input | ENCFF442YKA
+ graphType points
+ aggregate transparentOverlay
+ showSubtrackColorOnUi on
+ maxHeightPixels 25:12:8
+ visibility full
+ autoScale on
+
+  track thyroid_Input_ENCFF442YKACoverage
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid_Input/ENCFF442YKA/coverage.bigWig
+  shortLabel thyroid_Input_ENCFF442YKACoverage
+  longLabel thyroid_Input | ENCFF442YKA | Coverage
+  parent thyroid_Input_ENCFF442YKA
+  type bigWig
+  color 217,217,217
+
+  track thyroid_Input_ENCFF442YKAPeaks
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid_Input/ENCFF442YKA/joint_peaks.bigWig
+  shortLabel thyroid_Input_ENCFF442YKAPeaks
+  longLabel thyroid_Input | ENCFF442YKA | Peaks
+  parent thyroid_Input_ENCFF442YKA
+  type bigWig
+  color 0,0,0
+
+
+ track thyroid_Input_ENCFF995SFR
+ parent thyroid_Input
+ container multiWig
+ type bigWig
+ shortLabel thyroid_Input_ENCFF995SFR
+ longLabel thyroid_Input | ENCFF995SFR
+ graphType points
+ aggregate transparentOverlay
+ showSubtrackColorOnUi on
+ maxHeightPixels 25:12:8
+ visibility full
+ autoScale on
+
+  track thyroid_Input_ENCFF995SFRCoverage
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid_Input/ENCFF995SFR/coverage.bigWig
+  shortLabel thyroid_Input_ENCFF995SFRCoverage
+  longLabel thyroid_Input | ENCFF995SFR | Coverage
+  parent thyroid_Input_ENCFF995SFR
+  type bigWig
+  color 217,217,217
+
+  track thyroid_Input_ENCFF995SFRPeaks
+  bigDataUrl https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid_Input/ENCFF995SFR/joint_peaks.bigWig
+  shortLabel thyroid_Input_ENCFF995SFRPeaks
+  longLabel thyroid_Input | ENCFF995SFR | Peaks
+  parent thyroid_Input_ENCFF995SFR
+  type bigWig
+  color 0,0,0
+

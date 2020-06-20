@@ -1,0 +1,476 @@
+{
+  "tracks": [
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/all_labels.bigBed",
+      "label": "_model_all_labels",
+      "key": "Manually labeled regions with and without peaks",
+      "style": {}
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/problems.bigBed",
+      "label": "_model_problems",
+      "key": "Separate problems (PeakSegFPOP looks for multiple peaks in each region, independently for each sample)",
+      "style": {}
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/jointProblems.bigBed",
+      "label": "_model_jointProblems",
+      "key": "Joint problems (PeakSegJoint looks for one common peak in each region, across all samples)",
+      "style": {}
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/peaks_summary.bigBed",
+      "label": "_model_peaks_summary",
+      "key": "Regions with a peak in at least one sample",
+      "style": {}
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/aorta/ENCFF115HTK/coverage.bigWig",
+      "label": "aorta_ENCFF115HTKCoverage",
+      "key": "aorta | ENCFF115HTK | Coverage",
+      "style": {
+        "color": "141,211,199"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/aorta/ENCFF115HTK/joint_peaks.bigWig",
+      "label": "aorta_ENCFF115HTKPeaks",
+      "key": "aorta | ENCFF115HTK | Peaks",
+      "style": {
+        "color": "0,0,0"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/aorta/ENCFF502AXL/coverage.bigWig",
+      "label": "aorta_ENCFF502AXLCoverage",
+      "key": "aorta | ENCFF502AXL | Coverage",
+      "style": {
+        "color": "141,211,199"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/aorta/ENCFF502AXL/joint_peaks.bigWig",
+      "label": "aorta_ENCFF502AXLPeaks",
+      "key": "aorta | ENCFF502AXL | Peaks",
+      "style": {
+        "color": "0,0,0"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/aorta/ENCFF974KVN/coverage.bigWig",
+      "label": "aorta_ENCFF974KVNCoverage",
+      "key": "aorta | ENCFF974KVN | Coverage",
+      "style": {
+        "color": "141,211,199"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/aorta/ENCFF974KVN/joint_peaks.bigWig",
+      "label": "aorta_ENCFF974KVNPeaks",
+      "key": "aorta | ENCFF974KVN | Peaks",
+      "style": {
+        "color": "0,0,0"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/aorta_Input/ENCFF209QWM/coverage.bigWig",
+      "label": "aorta_Input_ENCFF209QWMCoverage",
+      "key": "aorta_Input | ENCFF209QWM | Coverage",
+      "style": {
+        "color": "190,186,218"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/aorta_Input/ENCFF209QWM/joint_peaks.bigWig",
+      "label": "aorta_Input_ENCFF209QWMPeaks",
+      "key": "aorta_Input | ENCFF209QWM | Peaks",
+      "style": {
+        "color": "0,0,0"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/aorta_Input/ENCFF264DFJ/coverage.bigWig",
+      "label": "aorta_Input_ENCFF264DFJCoverage",
+      "key": "aorta_Input | ENCFF264DFJ | Coverage",
+      "style": {
+        "color": "190,186,218"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/aorta_Input/ENCFF264DFJ/joint_peaks.bigWig",
+      "label": "aorta_Input_ENCFF264DFJPeaks",
+      "key": "aorta_Input | ENCFF264DFJ | Peaks",
+      "style": {
+        "color": "0,0,0"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/aorta_Input/ENCFF626FKO/coverage.bigWig",
+      "label": "aorta_Input_ENCFF626FKOCoverage",
+      "key": "aorta_Input | ENCFF626FKO | Coverage",
+      "style": {
+        "color": "190,186,218"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/aorta_Input/ENCFF626FKO/joint_peaks.bigWig",
+      "label": "aorta_Input_ENCFF626FKOPeaks",
+      "key": "aorta_Input | ENCFF626FKO | Peaks",
+      "style": {
+        "color": "0,0,0"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/colon/ENCFF332UYK/coverage.bigWig",
+      "label": "colon_ENCFF332UYKCoverage",
+      "key": "colon | ENCFF332UYK | Coverage",
+      "style": {
+        "color": "251,128,114"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/colon/ENCFF332UYK/joint_peaks.bigWig",
+      "label": "colon_ENCFF332UYKPeaks",
+      "key": "colon | ENCFF332UYK | Peaks",
+      "style": {
+        "color": "0,0,0"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/colon/ENCFF873WWR/coverage.bigWig",
+      "label": "colon_ENCFF873WWRCoverage",
+      "key": "colon | ENCFF873WWR | Coverage",
+      "style": {
+        "color": "251,128,114"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/colon/ENCFF873WWR/joint_peaks.bigWig",
+      "label": "colon_ENCFF873WWRPeaks",
+      "key": "colon | ENCFF873WWR | Peaks",
+      "style": {
+        "color": "0,0,0"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/colon_Input/ENCFF788LJE/coverage.bigWig",
+      "label": "colon_Input_ENCFF788LJECoverage",
+      "key": "colon_Input | ENCFF788LJE | Coverage",
+      "style": {
+        "color": "128,177,211"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/colon_Input/ENCFF788LJE/joint_peaks.bigWig",
+      "label": "colon_Input_ENCFF788LJEPeaks",
+      "key": "colon_Input | ENCFF788LJE | Peaks",
+      "style": {
+        "color": "0,0,0"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/colon_Input/ENCFF937EBV/coverage.bigWig",
+      "label": "colon_Input_ENCFF937EBVCoverage",
+      "key": "colon_Input | ENCFF937EBV | Coverage",
+      "style": {
+        "color": "128,177,211"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/colon_Input/ENCFF937EBV/joint_peaks.bigWig",
+      "label": "colon_Input_ENCFF937EBVPeaks",
+      "key": "colon_Input | ENCFF937EBV | Peaks",
+      "style": {
+        "color": "0,0,0"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle/ENCFF000BMB/coverage.bigWig",
+      "label": "skeletalMuscle_ENCFF000BMBCoverage",
+      "key": "skeletalMuscle | ENCFF000BMB | Coverage",
+      "style": {
+        "color": "253,180,98"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle/ENCFF000BMB/joint_peaks.bigWig",
+      "label": "skeletalMuscle_ENCFF000BMBPeaks",
+      "key": "skeletalMuscle | ENCFF000BMB | Peaks",
+      "style": {
+        "color": "0,0,0"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle/ENCFF000BMD/coverage.bigWig",
+      "label": "skeletalMuscle_ENCFF000BMDCoverage",
+      "key": "skeletalMuscle | ENCFF000BMD | Coverage",
+      "style": {
+        "color": "253,180,98"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle/ENCFF000BMD/joint_peaks.bigWig",
+      "label": "skeletalMuscle_ENCFF000BMDPeaks",
+      "key": "skeletalMuscle | ENCFF000BMD | Peaks",
+      "style": {
+        "color": "0,0,0"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle/ENCFF063EVY/coverage.bigWig",
+      "label": "skeletalMuscle_ENCFF063EVYCoverage",
+      "key": "skeletalMuscle | ENCFF063EVY | Coverage",
+      "style": {
+        "color": "253,180,98"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle/ENCFF063EVY/joint_peaks.bigWig",
+      "label": "skeletalMuscle_ENCFF063EVYPeaks",
+      "key": "skeletalMuscle | ENCFF063EVY | Peaks",
+      "style": {
+        "color": "0,0,0"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle/ENCFF280HQO/coverage.bigWig",
+      "label": "skeletalMuscle_ENCFF280HQOCoverage",
+      "key": "skeletalMuscle | ENCFF280HQO | Coverage",
+      "style": {
+        "color": "253,180,98"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle/ENCFF280HQO/joint_peaks.bigWig",
+      "label": "skeletalMuscle_ENCFF280HQOPeaks",
+      "key": "skeletalMuscle | ENCFF280HQO | Peaks",
+      "style": {
+        "color": "0,0,0"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle/ENCFF290WZR/coverage.bigWig",
+      "label": "skeletalMuscle_ENCFF290WZRCoverage",
+      "key": "skeletalMuscle | ENCFF290WZR | Coverage",
+      "style": {
+        "color": "253,180,98"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle/ENCFF290WZR/joint_peaks.bigWig",
+      "label": "skeletalMuscle_ENCFF290WZRPeaks",
+      "key": "skeletalMuscle | ENCFF290WZR | Peaks",
+      "style": {
+        "color": "0,0,0"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle/ENCFF743PUV/coverage.bigWig",
+      "label": "skeletalMuscle_ENCFF743PUVCoverage",
+      "key": "skeletalMuscle | ENCFF743PUV | Coverage",
+      "style": {
+        "color": "253,180,98"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle/ENCFF743PUV/joint_peaks.bigWig",
+      "label": "skeletalMuscle_ENCFF743PUVPeaks",
+      "key": "skeletalMuscle | ENCFF743PUV | Peaks",
+      "style": {
+        "color": "0,0,0"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle_Input/ENCFF000BJZ/coverage.bigWig",
+      "label": "skeletalMuscle_Input_ENCFF000BJZCoverage",
+      "key": "skeletalMuscle_Input | ENCFF000BJZ | Coverage",
+      "style": {
+        "color": "179,222,105"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle_Input/ENCFF000BJZ/joint_peaks.bigWig",
+      "label": "skeletalMuscle_Input_ENCFF000BJZPeaks",
+      "key": "skeletalMuscle_Input | ENCFF000BJZ | Peaks",
+      "style": {
+        "color": "0,0,0"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle_Input/ENCFF000BKA/coverage.bigWig",
+      "label": "skeletalMuscle_Input_ENCFF000BKACoverage",
+      "key": "skeletalMuscle_Input | ENCFF000BKA | Coverage",
+      "style": {
+        "color": "179,222,105"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle_Input/ENCFF000BKA/joint_peaks.bigWig",
+      "label": "skeletalMuscle_Input_ENCFF000BKAPeaks",
+      "key": "skeletalMuscle_Input | ENCFF000BKA | Peaks",
+      "style": {
+        "color": "0,0,0"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle_Input/ENCFF003XTF/coverage.bigWig",
+      "label": "skeletalMuscle_Input_ENCFF003XTFCoverage",
+      "key": "skeletalMuscle_Input | ENCFF003XTF | Coverage",
+      "style": {
+        "color": "179,222,105"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle_Input/ENCFF003XTF/joint_peaks.bigWig",
+      "label": "skeletalMuscle_Input_ENCFF003XTFPeaks",
+      "key": "skeletalMuscle_Input | ENCFF003XTF | Peaks",
+      "style": {
+        "color": "0,0,0"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle_Input/ENCFF208RCO/coverage.bigWig",
+      "label": "skeletalMuscle_Input_ENCFF208RCOCoverage",
+      "key": "skeletalMuscle_Input | ENCFF208RCO | Coverage",
+      "style": {
+        "color": "179,222,105"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/skeletalMuscle_Input/ENCFF208RCO/joint_peaks.bigWig",
+      "label": "skeletalMuscle_Input_ENCFF208RCOPeaks",
+      "key": "skeletalMuscle_Input | ENCFF208RCO | Peaks",
+      "style": {
+        "color": "0,0,0"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid/ENCFF014AIG/coverage.bigWig",
+      "label": "thyroid_ENCFF014AIGCoverage",
+      "key": "thyroid | ENCFF014AIG | Coverage",
+      "style": {
+        "color": "252,205,229"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid/ENCFF014AIG/joint_peaks.bigWig",
+      "label": "thyroid_ENCFF014AIGPeaks",
+      "key": "thyroid | ENCFF014AIG | Peaks",
+      "style": {
+        "color": "0,0,0"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid/ENCFF020VFT/coverage.bigWig",
+      "label": "thyroid_ENCFF020VFTCoverage",
+      "key": "thyroid | ENCFF020VFT | Coverage",
+      "style": {
+        "color": "252,205,229"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid/ENCFF020VFT/joint_peaks.bigWig",
+      "label": "thyroid_ENCFF020VFTPeaks",
+      "key": "thyroid | ENCFF020VFT | Peaks",
+      "style": {
+        "color": "0,0,0"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid/ENCFF482XRP/coverage.bigWig",
+      "label": "thyroid_ENCFF482XRPCoverage",
+      "key": "thyroid | ENCFF482XRP | Coverage",
+      "style": {
+        "color": "252,205,229"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid/ENCFF482XRP/joint_peaks.bigWig",
+      "label": "thyroid_ENCFF482XRPPeaks",
+      "key": "thyroid | ENCFF482XRP | Peaks",
+      "style": {
+        "color": "0,0,0"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid/ENCFF606GLK/coverage.bigWig",
+      "label": "thyroid_ENCFF606GLKCoverage",
+      "key": "thyroid | ENCFF606GLK | Coverage",
+      "style": {
+        "color": "252,205,229"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid/ENCFF606GLK/joint_peaks.bigWig",
+      "label": "thyroid_ENCFF606GLKPeaks",
+      "key": "thyroid | ENCFF606GLK | Peaks",
+      "style": {
+        "color": "0,0,0"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid_Input/ENCFF054RMF/coverage.bigWig",
+      "label": "thyroid_Input_ENCFF054RMFCoverage",
+      "key": "thyroid_Input | ENCFF054RMF | Coverage",
+      "style": {
+        "color": "217,217,217"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid_Input/ENCFF054RMF/joint_peaks.bigWig",
+      "label": "thyroid_Input_ENCFF054RMFPeaks",
+      "key": "thyroid_Input | ENCFF054RMF | Peaks",
+      "style": {
+        "color": "0,0,0"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid_Input/ENCFF108SOQ/coverage.bigWig",
+      "label": "thyroid_Input_ENCFF108SOQCoverage",
+      "key": "thyroid_Input | ENCFF108SOQ | Coverage",
+      "style": {
+        "color": "217,217,217"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid_Input/ENCFF108SOQ/joint_peaks.bigWig",
+      "label": "thyroid_Input_ENCFF108SOQPeaks",
+      "key": "thyroid_Input | ENCFF108SOQ | Peaks",
+      "style": {
+        "color": "0,0,0"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid_Input/ENCFF442YKA/coverage.bigWig",
+      "label": "thyroid_Input_ENCFF442YKACoverage",
+      "key": "thyroid_Input | ENCFF442YKA | Coverage",
+      "style": {
+        "color": "217,217,217"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid_Input/ENCFF442YKA/joint_peaks.bigWig",
+      "label": "thyroid_Input_ENCFF442YKAPeaks",
+      "key": "thyroid_Input | ENCFF442YKA | Peaks",
+      "style": {
+        "color": "0,0,0"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid_Input/ENCFF995SFR/coverage.bigWig",
+      "label": "thyroid_Input_ENCFF995SFRCoverage",
+      "key": "thyroid_Input | ENCFF995SFR | Coverage",
+      "style": {
+        "color": "217,217,217"
+      }
+    },
+    {
+      "urlTemplate": "https://rcdata.nau.edu/genomic-ml/PeakSegFPOP/labels/H3K4me3_TDH_ENCODE/samples/thyroid_Input/ENCFF995SFR/joint_peaks.bigWig",
+      "label": "thyroid_Input_ENCFF995SFRPeaks",
+      "key": "thyroid_Input | ENCFF995SFR | Peaks",
+      "style": {
+        "color": "0,0,0"
+      }
+    }
+  ]
+}

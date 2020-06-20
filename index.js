@@ -1,6 +1,8 @@
 const { TrackDbFile } = require("@gmod/ucsc-hub");
 const fs = require("fs");
-const trackDbFile = new TrackDbFile(fs.readFileSync("trackDb.txt", "utf8"));
+
+const myargs = process.argv.slice(2);
+const trackDbFile = new TrackDbFile(fs.readFileSync(myargs[0], "utf8"));
 
 const tracks = [];
 for (const [key, value] of trackDbFile.entries()) {
@@ -20,4 +22,4 @@ for (const [key, value] of trackDbFile.entries()) {
   }
 }
 
-fs.writeFileSync("trackList.json", JSON.stringify({ tracks }, 0, 2));
+console.log(JSON.stringify({ tracks }, 0, 2));
